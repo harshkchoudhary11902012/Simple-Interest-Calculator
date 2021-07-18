@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple interest calculator</title>
+    <style>
+      body {
+        background-color: aquamarine;
+        text-align: center;
+      }
+      .amount,
+      .year,
+      .range {
+        padding: 10px;
+      }
+      .calculator {
+        color: darkblue;
+        font-weight: bold;
+        font-size: 1.4rem;
+      }
+      button {
+        padding: 10px;
+        margin-top: 1px solid black;
+        color: darkred;
+        background-color: darkorange;
+      }
+      .result {
+        font-size: 50px;
+        text-align: Left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="maindiv">
+      <div>
+        <h1>Simple Interest Calculator</h1>
+      </div>
+      <form action="">
+        <div class="calculator">
+          <div class="amount">
+            <label for="amount">Amount: </label>
+            <input type="text" id="amount" name="amount" />
+          </div>
+          <div class="range">
+            <label for="range">Range: </label>
+            <input type="range" id="range" name="range" />
+          </div>
+          <div class="year">
+            <label for="years">No Of Years: </label>
+            <input type="text" id="years" name="years" />
+          </div>
+        </div>
+      </form>
+    </div>
+    <button type="submit" onclick="calculate()">Compute</button>
+    <div class="result" id="result">result:</div>
+    Ⓒ Everyone Can Get Rich
+    <script src="./index.js"></script>
+  </body>
+</html>
